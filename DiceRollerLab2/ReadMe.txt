@@ -33,4 +33,4 @@ Hints:
 Use the Random class to generate a random number.
 
 Extra Challenges:
-Come up with a set of winning combinations for other dice sizes besides 6.
+Come up with a set of winning combinations for other dice sizes besides 6. 
