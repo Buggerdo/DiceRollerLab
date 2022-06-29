@@ -18,6 +18,8 @@ namespace DiceRollerLab2
             if(sidesOfDice == 6)
             {
                 _ = new SixSidedDice(DieOne, DieTwo);
+
+
             }
         }
     }
