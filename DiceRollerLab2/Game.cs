@@ -4,23 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiceRollerLab2
+namespace DiceRoller
 {
     internal class Game
     {
         public Game()
         {
-            int sidesOfDice = Tools.Dice();
+            int sidesOfDice = Tools.GetDice();
+            string output;
 
-            int DieOne = Tools.Roll(sidesOfDice);
-            int DieTwo = Tools.Roll(sidesOfDice);
+            int dieOne = Tools.RollTheDie(sidesOfDice); // gets a new dice roll
+            int dieTwo = Tools.RollTheDie(sidesOfDice); // gets a new dice roll
 
-            if(sidesOfDice == 6)
+            if(sidesOfDice == 6) //Checks for 6 sidded dice
             {
-                _ = new SixSidedDice(DieOne, DieTwo);
-
-
+               output = SixSidedDice.SixSides(dieOne, dieTwo);
             }
+            else
+            {
+                output = AnyOtherNumberOfSidesOfDice.AnyOtherNumberOfSidesOfDie(dieOne, dieTwo, sidesOfDice);
+            }
+            Console.WriteLine(output.Trim());
         }
     }
 }

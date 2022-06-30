@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiceRollerLab2
+namespace DiceRoller
 {
     internal class Program
     {
@@ -12,8 +12,8 @@ namespace DiceRollerLab2
         {
             do
             {
-                _ = new Game(); 
-            } while(Tools.Continue());
+                _ = new Game();  // starts a new game
+            } while(Tools.ContinueTheGame()); //loops the program 
         }
     }
 }
