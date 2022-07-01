@@ -35,7 +35,6 @@ namespace DiceRoller
             return rand.Next(1, SidedsOfDice + 1);
         }
 
-
         /// <summary>
         /// Asks user if they want to play again
         /// </summary>
@@ -59,7 +58,6 @@ namespace DiceRoller
                 }
                 Console.Clear();
             } while(true);
-
         }
     }
 }

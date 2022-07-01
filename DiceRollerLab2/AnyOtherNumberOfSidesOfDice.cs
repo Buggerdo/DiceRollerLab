@@ -18,8 +18,7 @@ namespace DiceRoller
             {
                 combinations = "Double 4's? What good is that?";
             }
-
-            if(sidesOfDice%2 == 0 && dieOne + dieTwo == sidesOfDice)
+            else if(sidesOfDice%2 == 0 && dieOne + dieTwo == sidesOfDice)
             {
                 combinations = "You got 50%";
             }
