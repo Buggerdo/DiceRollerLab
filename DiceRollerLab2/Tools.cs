@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace DiceRoller
 {
     internal class Tools
@@ -38,7 +33,7 @@ namespace DiceRoller
         /// <summary>
         /// Asks user if they want to play again
         /// </summary>
-        /// <returns></returns>
+        /// <returns>True if user wants to continue</returns>
         public static bool ContinueTheGame()
         {
             Console.WriteLine("Press any key to continue");

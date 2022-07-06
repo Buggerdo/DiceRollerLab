@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace DiceRoller
 {
     internal class SixSidedDice
@@ -11,7 +6,7 @@ namespace DiceRoller
         public static string SixSides(int dieOne, int dieTwo)
         {
             int total = dieOne + dieTwo;
-            string combinations = string.Empty;
+            string combinations;
             string win = string.Empty;
 
 
