@@ -8,7 +8,7 @@ namespace DiceRoller
             do
             {
                 _ = new Game();  // starts a new game
-            } while(Tools.ContinueTheGame()); //loops the program 
+            } while(Continue.ContinueTheGame()); //loops the program 
         }
     }
 }

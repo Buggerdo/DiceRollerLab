@@ -3,11 +3,10 @@ namespace DiceRoller
 {
     internal class AnyOtherNumberOfSidesOfDice
     {
-        public static string AnyOtherNumberOfSidesOfDie(int dieOne, int dieTwo, int sidesOfDice)
+        public static string AnyOtherNumberOfSidesOfDie(int dieOne, int dieTwo, int sidesOfDice, int total)
         {
-            int total = dieOne + dieTwo;
             string combinations = string.Empty;
-            string win;
+            string win = string.Empty;
 
             if(dieOne == 4 && dieTwo == 4)
             {
@@ -24,10 +23,6 @@ namespace DiceRoller
             else if(dieOne == sidesOfDice && dieTwo == sidesOfDice)
             {
                 combinations = "Critical hit!";
-            }
-            else
-            {
-                combinations = $"The first die rolled a  {dieOne}\nThe second die rolled a {dieTwo}";
             }
 
             if(total == 2 || total > sidesOfDice/2)
